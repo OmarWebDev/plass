@@ -1,2 +1,23 @@
 {
+  "name": "omarwebdev/plass",
+  "type": "library",
+  "description": "Makes PHP better by using OOP",
+  "keywords": ["class", "classes", "flunt", "plass"],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Plass\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">8.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.22"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }
