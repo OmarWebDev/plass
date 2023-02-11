@@ -1,12 +1,22 @@
 {
   "name": "omarwebdev/plass",
   "type": "library",
-  "description": "Makes PHP better by using OOP",
-  "keywords": ["class", "classes", "flunt", "plass"],
+  "description": "The ultimate solution for converting PHP's built-in functions into class methods!",
+  "keywords": [
+    "PHP functions",
+    "Class methods",
+    "Function conversion",
+    "Readable code",
+    "Intuitive API",
+    "Compatibility",
+    "Test suite",
+    "Improved syntax",
+    "Improved code organization"
+  ],
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Plass\\": "src/"
+      "OmarWebDev\\Plass\\": "src/"
     }
   },
   "require": {
