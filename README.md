@@ -109,23 +109,53 @@ echo $str; // prints "ample, Hello"
 ```
 
 ### Available Methods
-Only methods that returns `Str` is chainable
-- `charAt(int $index): string|null` returns the character in a specific index
-- `toUpperCase(): Str` converts a string to upper case
-- `toLowerCase(): Str` converts a string to lower case
-- `repeat(int $count): string` repeats string a number of times
-- `trim(): Str` Strip whitespace from the beginning and end of a string
-- `substr(int $start, ?int $length): string` returns a part from the string
-- `substrReplace(array|string $replace, array|int $offset, array|int|null $length = null): Str` replace a part of the string by offset
-- `shuffle(): Str` Shuffles the string
-- `replace(array|string $search, array|string $replace): Str` replace a substring from the string
-- `contains(string $search): bool` check if the string contains substring
+Only methods that returns `Str` is chainable.
+Chainable methods means that you can chain methods for example: `Str::of('someString')->toUpperCase()->trim()->shuffle()`
 
-## Contributing
+#### charAt(int $index): string|null
+This method returns the character in a specific index of the string or null if index is out of range.
+
+Note: The original string is not modified.
+
+#### toUpperCase(): Str
+Convert string letters to upper case.
+#### toLowerCase(): Str
+Convert string letters to lower case.
+#### repeat(int $count): string
+repeat a string for the given number of times.
+
+Note: The original string is not modified.
+
+#### trim(): Str
+Removes whitespace from the beginning and end of a string.
+#### substr(int $start, ?int $length): string
+Returns a part of string.
+Note: The original string is not modified.
+#### substrReplace(array|string $replace, array|int $offset, array|int|null $length = null): Str
+Replace a part of string by offset and length.
+#### shuffle(): Str
+Shuffles the string letters ex. abc => bca.
+#### replace(array|string $search, array|string $replace): Str
+Replaces a part of a string in the string with other string
+#### contains(string $search): bool
+Checks if a string contains a substring.
+## Contribution
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
+Installation:
+
+Copy the repository and create a new branch.
+
+Install dependencies:
+```bash
+composer install
+```
+Run tests
+```bash
+composer test
+```
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
